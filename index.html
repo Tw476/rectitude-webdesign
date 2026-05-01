@@ -4,8 +4,8 @@
 <head>
   <title>Rectitude - Web Design Agency</title>
 
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" href="logo.png">
 
   <style>
     body {
@@ -26,15 +26,12 @@
       display: flex;
       justify-content: space-between;
       padding: 15px 30px;
-      background: rgba(0,0,0,0.8);
-      backdrop-filter: blur(10px);
+      background: rgba(0,0,0,0.9);
     }
 
-    .logo img {
-      width: 45px;
-      background: white;
-      padding: 5px;
-      border-radius: 8px;
+    .logo {
+      font-weight: bold;
+      font-size: 18px;
     }
 
     .nav-links a {
@@ -49,8 +46,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 120px 20px;
-      gap: 60px;
+      padding: 100px 20px;
+      gap: 50px;
       flex-wrap: wrap;
     }
 
@@ -59,8 +56,7 @@
     }
 
     h1 {
-      font-size: 45px;
-      line-height: 1.2;
+      font-size: 40px;
     }
 
     p {
@@ -68,14 +64,14 @@
     }
 
     .hero img {
-      width: 380px;
+      width: 350px;
       border-radius: 10px;
     }
 
     button {
       background: white;
       color: black;
-      padding: 14px 28px;
+      padding: 12px 25px;
       border: none;
       border-radius: 6px;
       margin-top: 15px;
@@ -87,14 +83,6 @@
       background: #ddd;
     }
 
-    /* TRUST */
-    .trust {
-      text-align: center;
-      padding: 40px 20px;
-      color: #777;
-      font-size: 14px;
-    }
-
     /* SERVICES */
     .services {
       padding: 80px 20px;
@@ -104,22 +92,21 @@
     .boxes {
       display: flex;
       justify-content: center;
-      gap: 25px;
+      gap: 20px;
       flex-wrap: wrap;
       margin-top: 40px;
     }
 
     .box {
       background: #111;
-      padding: 30px;
-      width: 260px;
-      border-radius: 12px;
+      padding: 25px;
+      width: 250px;
+      border-radius: 10px;
       transition: 0.3s;
     }
 
     .box:hover {
       transform: translateY(-10px);
-      background: #151515;
     }
 
     /* PORTFOLIO */
@@ -128,36 +115,10 @@
       text-align: center;
     }
 
-    .portfolio-grid {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
     .portfolio img {
-      width: 260px;
+      width: 250px;
+      margin: 10px;
       border-radius: 10px;
-    }
-
-    /* PRICING */
-    .pricing {
-      padding: 80px 20px;
-      text-align: center;
-      background: #111;
-    }
-
-    .price-box {
-      background: black;
-      padding: 30px;
-      border-radius: 12px;
-      width: 260px;
-    }
-
-    /* TESTIMONIALS */
-    .testimonials {
-      padding: 80px 20px;
-      text-align: center;
     }
 
     /* CONTACT */
@@ -166,12 +127,18 @@
       text-align: center;
     }
 
-    input {
+    input, textarea {
       padding: 12px;
       margin: 10px;
       width: 260px;
       border: none;
       border-radius: 5px;
+      font-family: Arial;
+    }
+
+    textarea {
+      height: 120px;
+      resize: none;
     }
 
     /* WHATSAPP */
@@ -184,6 +151,7 @@
       padding: 14px 18px;
       border-radius: 30px;
       text-decoration: none;
+      font-size: 14px;
     }
 
     /* MOBILE */
@@ -197,7 +165,7 @@
         width: 90%;
       }
 
-      input {
+      input, textarea {
         width: 90%;
       }
     }
@@ -207,17 +175,13 @@
 
 <body>
 
-  <!-- NAV -->
+  <!-- NAVBAR -->
   <div class="navbar">
-    <div class="logo">
-      <img src="logo.png">
-    </div>
-
+    <div class="logo">Rectitude</div>
     <div class="nav-links">
       <a href="#">Home</a>
       <a href="#services">Services</a>
       <a href="#portfolio">Work</a>
-      <a href="#pricing">Pricing</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -226,7 +190,7 @@
   <div class="hero">
     <div class="hero-text">
       <h1>We Build Websites That Bring You Customers</h1>
-      <p>Professional websites designed to grow your business and increase sales.</p>
+      <p>Professional websites designed to grow your business.</p>
 
       <a href="https://wa.me/2348104486235?text=Hello%20I%20need%20a%20website">
         <button>Get Your Website</button>
@@ -236,73 +200,54 @@
     <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
   </div>
 
-  <!-- TRUST -->
-  <div class="trust">
-    Trusted by small businesses, vendors & startups
-  </div>
-
   <!-- SERVICES -->
   <div class="services" id="services">
-    <h2>What We Do</h2>
+    <h2>Why Choose Us</h2>
 
     <div class="boxes">
-      <div class="box"><h3>Web Design</h3><p>Modern & clean websites</p></div>
-      <div class="box"><h3>Mobile Optimization</h3><p>Perfect on all devices</p></div>
-      <div class="box"><h3>Fast Delivery</h3><p>Quick turnaround</p></div>
+      <div class="box">
+        <h3>Fast Delivery</h3>
+        <p>Quick turnaround without compromising quality.</p>
+      </div>
+
+      <div class="box">
+        <h3>Mobile Friendly</h3>
+        <p>Perfect on all devices.</p>
+      </div>
+
+      <div class="box">
+        <h3>Modern Design</h3>
+        <p>Clean and professional layouts.</p>
+      </div>
     </div>
   </div>
 
   <!-- PORTFOLIO -->
   <div class="portfolio" id="portfolio">
     <h2>Our Work</h2>
-    <div class="portfolio-grid">
-      <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d">
-      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
-      <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8">
-    </div>
-  </div>
-
-  <!-- PRICING -->
-  <div class="pricing" id="pricing">
-    <h2>Pricing</h2>
-
-    <div class="boxes">
-      <div class="price-box">
-        <h3>Basic</h3>
-        <p>₦50,000</p>
-      </div>
-
-      <div class="price-box">
-        <h3>Standard</h3>
-        <p>₦100,000</p>
-      </div>
-
-      <div class="price-box">
-        <h3>Premium</h3>
-        <p>₦150,000+</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- TESTIMONIALS -->
-  <div class="testimonials">
-    <h2>What Clients Say</h2>
-    <p>"Very fast and professional!"</p>
-    <p>"My business looks better online now."</p>
+    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d">
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8">
   </div>
 
   <!-- CONTACT -->
   <div class="contact" id="contact">
+
     <form action="https://formspree.io/f/xvzlonpz" method="POST">
       <h2>Contact Us</h2>
 
-      <input type="text" name="name" placeholder="Your Name"><br>
-      <input type="email" name="email" placeholder="Your Email"><br>
+      <input type="text" name="name" placeholder="Your Name" required><br>
+
+      <input type="email" name="email" placeholder="Your Email" required><br>
+
+      <!-- MESSAGE BOX ADDED HERE -->
+      <textarea name="message" placeholder="Your Message" required></textarea><br>
 
       <button type="submit">Send Message</button>
     </form>
 
     <p>📧 sodiqdioxide@gmail.com</p>
+
   </div>
 
   <!-- WHATSAPP -->
