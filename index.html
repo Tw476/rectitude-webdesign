@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Rectitude - Web Design Agency</title>
+  <title>Rectitude - Web Design for Businesses</title>
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -10,13 +10,10 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0a0a0a;
+      font-family: Arial;
+      text-align: center;
+      background-color: black;
       color: white;
-    }
-
-    html {
-      scroll-behavior: smooth;
     }
 
     /* NAVBAR */
@@ -25,68 +22,57 @@
       top: 0;
       display: flex;
       justify-content: space-between;
-      padding: 15px 30px;
-      background: rgba(0,0,0,0.9);
-    }
-
-    .logo {
-      font-weight: bold;
-      font-size: 18px;
+      padding: 15px 20px;
+      background-color: black;
+      z-index: 1000;
     }
 
     .nav-links a {
       color: white;
-      margin: 0 12px;
+      margin: 0 10px;
       text-decoration: none;
       font-size: 14px;
     }
 
     /* HERO */
     .hero {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 100px 20px;
-      gap: 50px;
-      flex-wrap: wrap;
-    }
-
-    .hero-text {
-      max-width: 450px;
+      padding: 120px 20px;
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 45px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 30px;
     }
 
     p {
-      color: #aaa;
-    }
-
-    .hero img {
-      width: 350px;
-      border-radius: 10px;
+      margin: 15px;
+      font-size: 16px;
     }
 
     button {
-      background: white;
+      background-color: white;
       color: black;
       padding: 12px 25px;
       border: none;
-      border-radius: 6px;
-      margin-top: 15px;
+      margin: 10px;
       cursor: pointer;
-      font-weight: bold;
+      font-size: 16px;
+      border-radius: 5px;
     }
 
     button:hover {
-      background: #ddd;
+      background-color: grey;
     }
 
     /* SERVICES */
     .services {
+      background-color: white;
+      color: black;
       padding: 80px 20px;
-      text-align: center;
     }
 
     .boxes {
@@ -98,75 +84,75 @@
     }
 
     .box {
-      background: #111;
+      background-color: black;
+      color: white;
       padding: 25px;
-      width: 250px;
+      width: 260px;
       border-radius: 10px;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
       transition: 0.3s;
+    }
+
+    .box i {
+      font-size: 30px;
+      margin-bottom: 10px;
     }
 
     .box:hover {
       transform: translateY(-10px);
     }
 
-    /* PORTFOLIO */
-    .portfolio {
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    .portfolio img {
-      width: 250px;
-      margin: 10px;
-      border-radius: 10px;
-    }
-
     /* CONTACT */
     .contact {
       padding: 80px 20px;
-      text-align: center;
     }
 
-    input, textarea {
+    input {
       padding: 12px;
       margin: 10px;
       width: 260px;
       border: none;
       border-radius: 5px;
+    }
+
+    /* ONLY ADDED THIS */
+    textarea {
+      padding: 12px;
+      margin: 10px;
+      width: 260px;
+      height: 120px;
+      border: none;
+      border-radius: 5px;
+      resize: none;
       font-family: Arial;
     }
 
-    textarea {
-      height: 120px;
-      resize: none;
-    }
-
-    /* WHATSAPP */
-    .whatsapp-btn {
+    /* WHATSAPP BUTTON */
+    .whatsapp {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #25D366;
+      background-color: #25D366;
       color: white;
-      padding: 14px 18px;
-      border-radius: 30px;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 20px;
       text-decoration: none;
-      font-size: 14px;
     }
 
     /* MOBILE */
     @media (max-width: 600px) {
-      .hero {
+      h1 {
+        font-size: 30px;
+      }
+
+      .navbar {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
       }
 
-      .hero img {
-        width: 90%;
-      }
-
-      input, textarea {
-        width: 90%;
+      .nav-links {
+        margin-top: 10px;
       }
     }
 
@@ -177,82 +163,67 @@
 
   <!-- NAVBAR -->
   <div class="navbar">
-    <div class="logo">Rectitude</div>
+    <h3>Rectitude</h3>
     <div class="nav-links">
       <a href="#">Home</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Work</a>
-      <a href="#contact">Contact</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
     </div>
   </div>
 
   <!-- HERO -->
   <div class="hero">
-    <div class="hero-text">
-      <h1>We Build Websites That Bring You Customers</h1>
-      <p>Professional websites designed to grow your business.</p>
-
-      <a href="https://wa.me/2348104486235?text=Hello%20I%20need%20a%20website">
-        <button>Get Your Website</button>
-      </a>
-    </div>
-
-    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+    <h1>We Build Websites That Bring You Customers</h1>
+    <p>Modern mobile-friendly websites designed to grow your business.</p>
+    <button>Get Your Website</button>
   </div>
 
   <!-- SERVICES -->
-  <div class="services" id="services">
+  <div class="services">
     <h2>Why Choose Us</h2>
 
     <div class="boxes">
+
       <div class="box">
+        <i class="fas fa-bolt"></i>
         <h3>Fast Delivery</h3>
         <p>Quick turnaround without compromising quality.</p>
       </div>
 
       <div class="box">
+        <i class="fas fa-mobile-alt"></i>
         <h3>Mobile Friendly</h3>
-        <p>Perfect on all devices.</p>
+        <p>Looks perfect on all devices.</p>
       </div>
 
       <div class="box">
+        <i class="fas fa-paint-brush"></i>
         <h3>Modern Design</h3>
         <p>Clean and professional layouts.</p>
       </div>
+
     </div>
   </div>
 
-  <!-- PORTFOLIO -->
-  <div class="portfolio" id="portfolio">
-    <h2>Our Work</h2>
-    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d">
-    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
-    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8">
-  </div>
-
   <!-- CONTACT -->
-  <div class="contact" id="contact">
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <p>Send us a message to get started</p>
 
     <form action="https://formspree.io/f/xvzlonpz" method="POST">
-      <h2>Contact Us</h2>
-
       <input type="text" name="name" placeholder="Your Name" required><br>
-
       <input type="email" name="email" placeholder="Your Email" required><br>
 
-      <!-- MESSAGE BOX ADDED HERE -->
+      <!-- ONLY ADDITION -->
       <textarea name="message" placeholder="Your Message" required></textarea><br>
 
       <button type="submit">Send Message</button>
     </form>
-
-    <p>📧 sodiqdioxide@gmail.com</p>
-
   </div>
 
   <!-- WHATSAPP -->
-  <a href="https://wa.me/2348104486235" class="whatsapp-btn">
-    Chat on WhatsApp
+  <a href="https://wa.me/2348104486235" class="whatsapp">
+    <i class="fab fa-whatsapp"></i>
   </a>
 
 </body>
